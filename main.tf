@@ -11,7 +11,7 @@ terraform {
 module "eks" {
   count = var.cloud_provider == "aws" ? 1 : 0
   source  = "terraform-aws-modules/eks/aws"
-  version = "18.29.0"
+  version = "19.16.0"
 
   cluster_name    = var.cluster_name
   cluster_version = "1.27"
